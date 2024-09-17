@@ -21,13 +21,13 @@ export default function pLimit(concurrency) {
 	};
 
 	const run = async (function_, resolve, arguments_) => {
-		const result = (async () => function_(...arguments_))();
+		// const result = (async () => function_(...arguments_))();
 
-		resolve(result);
+		// resolve(result);
 
-		try {
-			await result;
-		} catch {}
+		// try {
+		// 	await result;
+		// } catch {}
 
 		next();
 	};
